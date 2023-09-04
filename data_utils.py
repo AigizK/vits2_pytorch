@@ -73,7 +73,7 @@ class TextAudioLoader(torch.utils.data.Dataset):
         audio, sampling_rate = load_wav_to_torch(filename)
         if sampling_rate != self.sampling_rate:
             raise ValueError(
-                f"{sampling_rate} SR doesn't match target {self.sampling_rate} SR"
+                f"{filename}:{sampling_rate} SR doesn't match target {self.sampling_rate} SR"
             )
         audio_norm = audio / self.max_wav_value
         audio_norm = audio_norm.unsqueeze(0)
