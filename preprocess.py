@@ -10,11 +10,11 @@ if __name__ == "__main__":
         "--filelists",
         nargs="+",
         default=[
-            "filelists/ljs_audio_text_val_filelist.txt",
-            "filelists/ljs_audio_text_test_filelist.txt",
+            "/home/tts/TTS_Zulfia/ljspeech_dataset_RUS/metadata_val.csv",
+            "/home/tts/TTS_Zulfia/ljspeech_dataset_RUS/metadata_train.csv",
         ],
     )
-    parser.add_argument("--text_cleaners", nargs="+", default=["english_cleaners2"])
+    parser.add_argument("--text_cleaners", nargs="+", default=["basic_cleaners"])
 
     args = parser.parse_args()
 
