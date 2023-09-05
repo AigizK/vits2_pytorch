@@ -19,8 +19,8 @@ def get_text(text, hps):
 
 
 CONFIG_PATH = "./configs/vits2_ljs_nosdp.json"
-MODEL_PATH = "./logs/G_114000.pth"
-TEXT = "VITS-2 is Awesome!"
+MODEL_PATH = "./logs/ljs_base/G_80000.pth"
+TEXT = "л+ера был+а в д+етском сад+у. т+ак зав+едующая ег+о одног+о и хвал+ила."
 OUTPUT_WAV_PATH = "sample_vits2.wav"
 
 hps = utils.get_hparams_from_file(CONFIG_PATH)
